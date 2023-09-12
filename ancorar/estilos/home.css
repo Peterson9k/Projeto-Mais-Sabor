@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --amber: #f5bb00;
+    --coral: #ff784f;
+    --lightCoral: #eba48e;
+    --white: #f2f2f3;
+    --gray: #4d4a4f;
+    --black: #2a2a2a;
+    --gradient: linear-gradient(110deg, #ff784f 0%, #ce4f51 100%);
+  }
+
+.conteiner1{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    top: 64px;
+    width: 90vw;
+    height: 111.96px;
+    margin: auto;
+}
+.geral{
+  text-decoration: none;
+}
+.menu{
+    margin-top: 50px;
+    width: 80vw;
+}
+
+.menu > ul {
+ 
+    font-size: 12px;
+    flex-flow: row wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.itemm , .itemm a{
+    list-style-type: none;    
+    color: var(--gray);
+}
+
+.itemm a:hover{
+    color: var(--coral);
+}
+
+#um a{
+ color: var(--coral);
+}
+
+.banner__container {
+    padding: 60px 4%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+  }
+  
+  .banner__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 550px;
+  }
+  
+  .banner__content h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--black);
+    line-height: 1.6;
+    cursor: default;
+  }
+  
+  .banner__content p {
+    color: var(--gray);
+    font-size: 1.125rem;
+    line-height: 1.4;
+    cursor: default;
+    margin-bottom: 20px;
+  }
+  
+  .banner__content-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .banner__content-buttons button {
+    border-radius: 12px;
+    width: 180px;
+    height: 60px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: 0;
+    color: var(--white);
+    cursor: pointer;
+  }
+  
+  .banner__content-buttons .button1 {
+    background: var(--gradient);
+  }
+  
+  .banner__content-buttons .button2 {
+    background: var(--gray);
+  }
+  
+  .banner__container img {
+    max-height: 550px;
+  }

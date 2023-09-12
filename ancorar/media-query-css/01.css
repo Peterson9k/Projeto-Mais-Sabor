@@ -1,0 +1,41 @@
+
+.conteiner1{
+    display: flex;
+    top: 64px;
+    height: 111.96px;
+    margin: 0 auto;
+    width: 90%;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+
+.menu{
+    margin-top: 50px;
+    max-width: 80vw;
+    width: 60vw;
+    justify-content: end;
+    display: flex;
+}
+
+.itemm > .geral{
+   flex-flow: column wrap;
+   display: flex;
+   max-width: 80vw;
+   display: block;
+   
+}
+
+.img{
+    width: 200px;
+    height: 300px;
+}
+
+
+.banner__content{
+    padding-top: 40px
+}
+
+.banner__content p{
+    text-align: justify;
+}

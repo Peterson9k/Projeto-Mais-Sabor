@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --amber: #f5bb00;
+    --coral: #ff784f;
+    --lightCoral: #eba48e;
+    --white: #f2f2f3;
+    --gray: #4d4a4f;
+    --black: #2a2a2a;
+    --gradient: linear-gradient(110deg, #ff784f 0%, #ce4f51 100%);
+}
+
+.footer-base-1 {
+    display: flex;
+   
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: 244px;
+    margin-left: 10px;
+    position: relative;
+    border: 1px sold black;
+    background-color: aqua;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.footerum{
+   
+    padding: 10px;
+    color: black;
+}
+
+.footerum p {
+    margin-top: 10px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4D4A4F;
+
+}
+
+.footerdois{
+    background-color: aqua;
+    width: 95px;
+    height: 224.78955078125px;
+    top: 89px;
+    left: 38vw;
+    position: absolute;
+}
+
+.footerdois h3 {
+        
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footerdois p {
+    color: #4D4A4F;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.footertreis{
+    background-color: aqua;
+    width: 213px;
+    height: 174.78955078125px;
+    top: 89px;
+    left: 50vw;
+    position: absolute;
+}
+
+.footertreis h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+} 
+
+.footertreis p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--gray);
+    
+}
+
+
+.footerquatro{
+    background-color: aqua;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 213px;
+    height: 244px;
+    top: 89px;
+    left: 70vw; 
+    position: absolute;
+}
+
+.footerquatro h3 {
+    padding-bottom: 6px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footerquatro p {
+    color: var(--gray);
+}
+
+.icon{
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.icon02{
+    margin-top: 10px;
+    margin-right: 7px;
+}
+ 
