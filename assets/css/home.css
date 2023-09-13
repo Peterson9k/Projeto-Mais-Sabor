@@ -55,7 +55,14 @@
   .banner__content-buttons .button2 {
     background: var(--gray);
   }
-  
+
+    
+  .button1:hover{
+  background:linear-gradient(110deg,#ce4f51 0%, #ff784f 100% )
+  }
+  .button2:hover{
+    color: black;
+  }
   .banner__container img {
     max-height: 550px;
     max-width: 100%;
@@ -87,6 +94,10 @@
     }
   }
   
+  .deli{
+    top: 20px;
+    position: relative;
+  }
   @media (max-width: 400px) {
     .banner__content-buttons {
       flex-direction: column;

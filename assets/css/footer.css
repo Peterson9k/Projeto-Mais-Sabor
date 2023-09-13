@@ -45,6 +45,16 @@
   color: var(--gray);
 }
 
+
+.footer__div-empresa ul li a:hover,
+.footer__div-servicos ul li a:hover,
+.footer__div-contato ul li a:hover{
+  color: var(--coral);
+ 
+} 
+
+
+
 .footer__div-contato ul li a {
   display: flex;
   align-items: center;
@@ -55,6 +65,7 @@
   width: 20px;
   height: 20px;
 }
+
 
 @media (max-width: 768px) {
   .footer__grid-container {
