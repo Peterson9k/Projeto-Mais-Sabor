@@ -90,7 +90,7 @@
       </div>
     </section>
 
-   
+<span class="js-scroll">   
 <main class="main1">
         
             
@@ -223,7 +223,7 @@
         </div>
       </div>
     </footer>
-
+</span>
   <script>      
        const menuBar = document.querySelectorAll('.mobile-menu span')
       
@@ -236,6 +236,25 @@
        menuBar.forEach((item) =>{
         item.addEventListener('click' , ativarMenu)
        })
+
+       
+function animacaoAoScroll(){
+  const sections = document.querySelectorAll('.js-scroll')
+  if(sections.length){
+  const windowMetade = window.innerWidth * 0.6
+  function animalScroll(){
+    sections.forEach((sectionl) =>{
+        const sectionTop = sectionl.getBoundingClientRect().top;
+        const isSectionVisible = (sectionTop - windowMetade) < 0; 
+        if(isSectionVisible)sectionl.classList.add('ativo') 
+        else sectionl.classList.remove('ativo')
+        
+    })
+  }
+  animalScroll()
+  window.addEventListener('scroll' ,animalScroll)
+}}
+animacaoAoScroll()
     </script>
   </body>
 </html>
