@@ -43,7 +43,7 @@
   margin: auto;
   transition: transform 0.1s;    
 }
-@media  screen and (max-width:928px) {
+@media  screen and (max-width:940px) {
   .main1{
       height: 1670px;
   }
@@ -61,7 +61,11 @@
       transform: scale(1.0);
 }
 }
-
+@media screen and (min-width:626px) and (max-width:939px) {
+  .main1{
+    height: 1200px;
+}
+}
 .bloco1:hover{
   transform: scale(1.1);
   box-shadow: -2px -2px 20px 6px rgba(0, 0, 0, 0.144) 
@@ -218,5 +222,17 @@ button > p {
   .main-3 > .tmr{
     flex-wrap: wrap;
     max-width: 100%;
+  }
+  .bannerBug .banner__container{
+    position: relative;
+    top: 500px;
+  }
+ }
+
+ @media screen and (max-width:615px) {
+  
+  .bannerBug .banner__container{
+    position: relative;
+    top: 1400px;
   }
  }

@@ -38,33 +38,7 @@
   list-style: none;
 }
 
-.footer__div-empresa ul li a,
-.footer__div-servicos ul li a,
-.footer__div-contato ul li a {
-  text-decoration: none;
-  color: var(--gray);
-}
-
-
-.footer__div-empresa ul li a:hover,
-.footer__div-servicos ul li a:hover,
-.footer__div-contato ul li a:hover{
-  color: var(--coral);
- 
-} 
-
-
-
-.footer__div-contato ul li a {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.footer__div-contato img {
-  width: 20px;
-  height: 20px;
-}
+.footer__div-empresa ul li a,.footer__div-servicos ul li a,.footer__div-contato ul li a { text-decoration:none;color: var(--gray)}.footer__div-empresa ul li a:hover,.footer__div-servicos ul li a:hover,.footer__div-contato ul li a:hover{  color: var(--coral);}.footer__div-contato ul li a {display: flex;align-items: center;gap: 5px;}.footer__div-contato img {width: 20px;height: 20px;}
 
 
 @media (max-width: 768px) {
@@ -72,9 +46,22 @@
     grid-template-columns: 1fr 1fr;
     place-items: flex-start;
     gap: 40px;
+    top: 500px;
+    position: relative;
   }
 }
-
+@media(max-width: 615px) {
+  .footer__grid-container{
+    position: relative;
+    margin-top: 800px;
+  }
+}
+@media screen and (max-width:918px) {
+  .footer__grid-container{
+    top: 600px;
+    position: relative;
+  }
+}
 @media (max-width: 400px) {
   .footer__grid-container {
     grid-template-columns: 1fr;
