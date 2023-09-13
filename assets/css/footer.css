@@ -55,13 +55,21 @@
     position: relative;
     margin-top: 800px;
   }
+  
+  .bannerBug .banner__container{
+    position: relative;
+    top: 1400px;
+  }
 }
 @media screen and (max-width:918px) {
   .footer__grid-container{
     top: 600px;
     position: relative;
   }
+  
 }
+
+
 @media (max-width: 400px) {
   .footer__grid-container {
     grid-template-columns: 1fr;

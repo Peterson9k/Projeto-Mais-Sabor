@@ -230,9 +230,8 @@ button > p {
  }
 
  @media screen and (max-width:615px) {
-  
   .bannerBug .banner__container{
     position: relative;
-    top: 1400px;
+    top: 400px;
   }
  }
