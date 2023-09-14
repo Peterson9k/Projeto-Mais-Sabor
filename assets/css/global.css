@@ -7,28 +7,22 @@
   --black: #2a2a2a;
   --gradient: linear-gradient(110deg, #ff784f 0%, #ce4f51 100%);
 }
-
-/* css reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
 body {
   max-width: 2000px;
   margin: 0 auto;
 }
-
-
- .js .js-scroll {
+.js .js-scroll {
   opacity: 0;
   transform: translate3d(-30px , 0 , 0);
   transition: .3s;
 }
-
- .js .js-scroll.ativo{
+.js .js-scroll.ativo{
   opacity: 1;
   transform: translate3d(0, 0 , 0);
   

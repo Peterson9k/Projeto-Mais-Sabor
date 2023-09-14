@@ -1,13 +1,10 @@
- 
-  /* SEÇÃO BANNER */
-  .banner__container {
+ .banner__container {
     padding: 0px 4% 40px;
     display: flex;
     align-items: center;
     gap: 40px;
     justify-content: space-between;
   }
-  
   .banner__content {
     display: flex;
     flex-direction: column;
@@ -15,15 +12,13 @@
     width: 100%;
     max-width: 550px;
   }
-  
   .banner__content h1 {
     font-size: 2.25rem;
     font-weight: bold;
     color: var(--black);
     line-height: 1.6;
     cursor: default;
-  }
-  
+  }  
   .banner__content p {
     color: var(--gray);
     font-size: 1.125rem;
@@ -31,12 +26,10 @@
     cursor: default;
     margin-bottom: 20px;
   }
-  
   .banner__content-buttons {
     display: flex;
     gap: 20px;
   }
-  
   .banner__content-buttons button {
     border-radius: 12px;
     width: 180px;
@@ -47,28 +40,18 @@
     color: var(--white);
     cursor: pointer;
   }
-  
-  .banner__content-buttons .button1 {
-    background: var(--gradient);
-  }
-  
-  .banner__content-buttons .button2 {
-    background: var(--gray);
-  }
-
-    
-  .button1:hover{
-  background:linear-gradient(110deg,#ce4f51 0%, #ff784f 100% )
-  }
-  .button2:hover{
-    color: black;
-  }
   .banner__container img {
     max-height: 550px;
     max-width: 100%;
   }
-  
-  /* media queries */
+  .deli{
+    top: 20px;
+    position: relative;
+  }
+.banner__content-buttons .button1 {background: var(--gradient);}
+.banner__content-buttons .button2 {background: var(--gray);}
+.button1:hover{background:linear-gradient(110deg,#ce4f51 0%, #ff784f 100% )}
+.button2:hover{color: black;}
   @media (max-width: 850px) {
     .banner__container {
       flex-direction: column;
@@ -92,11 +75,6 @@
       justify-content: center;
       gap: 10px;
     }
-  }
-  
-  .deli{
-    top: 20px;
-    position: relative;
   }
   @media (max-width: 400px) {
     .banner__content-buttons {

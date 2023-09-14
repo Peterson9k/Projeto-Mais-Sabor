@@ -4,83 +4,69 @@
     justify-content: space-between;
     align-items: center;
   }
-  
-  header img {
-    width: 100px;
-  }
-  
   nav ul {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     list-style: none;
   }
- 
-
   nav ul li a {
     text-decoration: none;
     color: var(--gray);
     font-size: 1rem;
   }
-  
-  .pagina-ativa {
-    color: var(--coral);
-  }
- 
-
-.desktop-menu {
- display: block;
-
-}
-
-.mobile-menu {
-  display: none;
-}
-.js-accordion{
-  display: none;
-}
-
+header img {width: 100px;}  
+.pagina-ativa {color: var(--coral);}
+.desktop-menu {display: block;}
+.mobile-menu {display: none;}
+.js-accordion{display: none;}
 
 @media (max-width: 768px) {
-  .desktop-menu {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: block;
-  }
-
+  .desktop-menu {display: none;}
+  .mobile-menu {display: block;}
+  .js .mobile-menu ul {display: none;}
+  .mobile-menu ul.ativo li a{color: black;}
+  .mobile-menu  ul.ativo li .pagina-ativa{color: white;}
   .mobile-menu span{
-    margin-right: 20px;
+    text-align: right;
+    right: 20px;
     margin-top: -40px;
-    font-size: 40px;
+    font-size: 2.7rem;
     color: var(--coral);
     display: block;
     cursor: pointer;
+    position: fixed;
   }
-
-  .js .mobile-menu ul {
-    display: none;
-  }
-
   .mobile-menu ul.ativo{
-    position: absolute;
-    margin-right: 20px;
+    width:250px;
+    height: 50vh;
+    z-index: 10;
     font-size: 30px;
-    top: 80px;
+    top: 30px;
     display: block;
     cursor: pointer;
+    position: fixed;
     animation: slideDown .5s forwards;
+    left:1px;
+    border-radius: 10px;
+    background-color: var(--coral);
   }
-
+  .mobile-menu ul.ativo li{
+    margin-top: 10px;
+    margin: 10px 2px 0px 2px;
+    padding:.25rem 0;
+    text-align:center;
+    height:max-content;
+    transition:.3s;
+    letter-spacing:3px;
+    cursor:pointer;
+  }
+  .mobile-menu ul.ativo li a:hover, li:hover{
+    transition:.6s;
+    color:white;
+    background-color:var(--gray);
+    border-radius: 4px;
+  }
   @keyframes slideDown {
-    from{
-      opacity: 0;
-    }
-  
-    to{
-      opacity: 1;
-    }
-  }
-  }
+    from{opacity: 0;}to{opacity: 1;}}}
 
