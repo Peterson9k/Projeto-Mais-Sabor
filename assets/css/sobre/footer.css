@@ -1,4 +1,4 @@
-  .footer__grid-container {
+.footer__grid-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
     place-items: flex-start center;
@@ -51,16 +51,20 @@
     top: 100px;}
 
 @media (max-width: 768px) {
-  .footer__grid-container {grid-template-columns: 1fr 1fr;place-items: flex-start;gap: 40px;top: 500px;position: relative;}
+  .footer__grid-container {grid-template-columns: 1fr 1fr;place-items: flex-start;gap: 40px;top: 600px;position: relative;}
   .copyright__container{
     position: relative;
     top: 600px;}}
-@media(max-width: 615px) {
-  .footer__grid-container{position: relative;margin-top: 800px;}
+@media(max-width: 767px) {
+  .footer__grid-container{position: relative;margin-top: 300px;}
   .bannerBug .banner__container{position: relative;top: 1400px;}}
-@media screen and (max-width:918px) {
-  .footer__grid-container{top: 600px;position: relative;}
-  .copyright__container{top: 700px;position: relative;}}
+@media screen and (max-width:1250px) {
+  .footer__grid-container{top: 100px;position: relative;}
+  .copyright__container{top: 150px;position: relative;}}
+@media screen and (max-width:1236px) {
+    .footer__grid-container{top: 250px;position: relative;}
+    .copyright__container{top: 300px;position: relative;}
+}
 @media (max-width: 400px) {
   .footer__grid-container {grid-template-columns: 1fr;place-items: center flex-start;}
   .footer__div-logo {place-self: center;display: flex;flex-direction: column;text-align: center;justify-content: center;align-items: center;}}

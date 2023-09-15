@@ -23,24 +23,10 @@ header img {width: 100px;}
 
 @media (max-width: 768px) {
   .desktop-menu {display: none;}
-  .mobile-menu {display: block;}
+  .mobile-menu {display: block; transition: .3s;}
   .js .mobile-menu ul {display: none;}
-  .mobile-menu ul.ativo li a{color: black;}
+  .mobile-menu ul.ativo li a{color: black; }
   .mobile-menu  ul.ativo li .pagina-ativa{color: white;}
-  /* .mobile-menu span{
-    text-align: right;
-    padding: 5px;
-    right: 20px;
-    z-index: 100;
-    margin-top: -40px;
-    font-size: 3rem;
-    color: var(--coral);
-    display: block;
-    cursor: pointer;
-    position: fixed;
-  } */
-
-  
 .js-accordion{
   text-align: right;
   padding: 10px;
@@ -51,7 +37,6 @@ header img {width: 100px;}
   cursor: pointer;
   position: fixed;
 }
-
 .js-accordion span {
   cursor: pointer;
   position: relative;
@@ -64,24 +49,7 @@ header img {width: 100px;}
 }
 
 .js-accordion span:nth-child(1){
-  transform-origin: left;
-}
-.js-accordion span:nth-child(2){
-  transform-origin: center;
-}
-.js-accordion span:nth-child(3){
-  transform-origin: left;
-}
-.js-accordion.ativo span:nth-child(1){
-  transform: rotate(45deg);
-  left: 2px;
-}
-.js-accordion.ativo02 span:nth-child(2){
-  transform: rotate(315deg);
-}
-.js-accordion.ativo02 span:nth-child(3){
-  transform: scaleX(0);
-}
+  transform-origin: left;}.js-accordion span:nth-child(2){transform-origin: center;}.js-accordion span:nth-child(3){transform-origin: left;}.js-accordion.ativo span:nth-child(1){transform: rotate(45deg);left: 2px;}.js-accordion.ativo02 span:nth-child(2){transform: rotate(315deg);}.js-accordion.ativo02 span:nth-child(3){transform: scaleX(0);}
   .mobile-menu ul.ativo{
     width:250px;
     height: 50vh;
@@ -96,6 +64,7 @@ header img {width: 100px;}
     border-radius: 10px;
     background-color: var(--coral);
   }
+ 
   .mobile-menu ul.ativo li{
     margin-top: 10px;
     margin: 10px 2px 0px 2px;
@@ -106,7 +75,7 @@ header img {width: 100px;}
     letter-spacing:3px;
     cursor:pointer;
   }
-  .mobile-menu > ul.ativo a:hover{
+  .mobile-menu > ul.ativo li:hover a{
     font-weight: 700;
     color:white;
     transition:.5s;
@@ -118,5 +87,18 @@ header img {width: 100px;}
 
   }
   @keyframes slideDown {
-    from{opacity: 0;}to{opacity: 1;}}}
+    from{opacity: 0;transform: translate3d(-30px , 0 , 0);
+      transition: .3s;}to{opacity: 1;transform: translate3d(-30, 0 , 0);}}}
 
+
+/* .js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px , 0 , 0);
+  transition: .3s;
+}
+
+.js .js-scroll.ativo{
+  opacity: 1;
+  transform: translate3d(0, 0 , 0);
+  
+} */

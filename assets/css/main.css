@@ -32,8 +32,7 @@
     margin: auto;
     transition: transform 0.1s;    } 
   .bloco1:hover{
-  transform: scale(1.1);
-  box-shadow: -2px -2px 20px 6px rgba(0, 0, 0, 0.144) }
+    transform: scale(1.1);}
   .text-bloco-1 > h3 {
     padding-top:15px;    
     font-size: 1.4rem;
@@ -80,23 +79,28 @@
     width: 240px;
     height: 100px;}
   .main-2 button{
-  padding: 10px;
-  margin: auto;
-  border: none;
-  background-image: linear-gradient(110deg, #ff784f 0%, #ce4f51 100%);
-  width: 186px;
-  height: 70px;
-  border-radius: 12px;
-  margin-top: 35px;
-  cursor: pointer;}
-  .main-2 button:hover{
-    background-image: linear-gradient(110deg, #ce4f51 0%, #ff784f 100%);
-    color: wheat;}
-  button > p {
+    padding: 10px;
+    margin: auto;
+    border: none;
+    background-image: linear-gradient(110deg, #ff784f 0%, #ce4f51 100%);
+    width: 186px;
+    height: 70px;
+    border-radius: 12px;
+    margin-top: 35px;
+    cursor: pointer;}
+  
+  .bloco1 button:hover p{
+    transition: 0.5s;
+    color: black;
+    font-weight: 600;
+  }
+
+  .bloco1 button p {
     color: white;
     font-size: 20px;
     text-align: center;
-    margin: auto;}
+    margin: auto;
+  }
   .geral{
   text-decoration: none;}
   .main-3 {
@@ -137,9 +141,13 @@
       display: block;
       background-image: linear-gradient(110deg, #ff784f 0%, #ce4f51 100%);
       cursor: pointer;
-      border: none;}
-  .temperos-buttom > button:hover{
-    background-image: linear-gradient(110deg,#ce4f51 0%, #ff784f 100%);}
+      border: none;
+      transition: .4s;}
+  .temperos-buttom > button:hover > p{
+   transition: .5s;color: black;}
+   .temperos-buttom > button:hover{
+    background-image:linear-gradient(110deg,#ce4f51 0%, #ff784f 100% ); color: black;transition: .4s;
+   }
   .temperos-buttom > button > p {
     color: white;
     font-size: 1.125rem;

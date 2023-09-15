@@ -67,3 +67,127 @@
         flex-wrap: wrap;
     }
 }
+
+.avaliacao{
+    width: 100%;
+    background-color: white;
+    max-height: 911px;
+}
+.avaliacao h1{
+    margin-top: 122px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--coral);
+}
+.avaliacao h2{
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--gray);
+}
+
+.avaliacao .avaItens{
+    display: flex;
+    text-align: center;
+    margin-top: 39px;
+}
+
+.avaliacao div{
+    height: 450px;
+    width: 400px;
+    background: var(--gradient);
+    margin: auto;
+}
+
+.avaliacao div img{
+    margin-top: 20px;
+}
+
+.avaliacao div h3:nth-child(2){
+    color: white;
+    font-size: 1.2rem;
+    padding: 1px;
+    margin: 55px 4px 0px 4px;
+}
+
+.avaliacao div h3:nth-child(3){
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 200px;
+}
+@media screen and (max-width:1304px) {
+    .avaliacao .avaItens{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+.loca {
+    background: var(--gradient);
+    max-height: 100%;
+    height: 500px;
+    width: 100%;
+    margin-top: 125px;
+    display: flex;
+}
+.loca .blocoInfor{
+    max-width: 294px;
+    height: 440px;
+    margin-left: 68px;
+    padding-top: 49px;
+    text-align: center;
+}
+
+.loca .blocoInfor h2:nth-child(1){
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+}
+.loca .blocoInfor h2,a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.loca .blocoInfor h2:hover a,.loca .blocoInfor h2:hover{
+    font-weight: 700;
+    transition: .3s;
+}
+
+.loca iframe {
+    border:none;
+    background: var(--gradient);
+    width: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    margin: 10px 5px 10px 20%;
+}
+
+@media screen and (max-width:1237px) {
+    .loca{
+        position: relative;
+        top: 200px;
+    }
+ 
+}
+@media screen and (max-width:810px) {
+    .loca {
+        top: 550px;
+        height: 700px;
+        display: block;
+    }
+    .loca iframe {
+        display: block;
+        width: 100%;
+        height:250px;
+        margin: auto ;
+        padding: 0px 10px 2px 10px;
+
+    }
+}

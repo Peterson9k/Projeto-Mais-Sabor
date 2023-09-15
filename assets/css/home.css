@@ -37,6 +37,7 @@
     font-size: 1.125rem;
     font-weight: bold;
     border: 0;
+    transition: .4s;
     color: var(--white);
     cursor: pointer;
   }
@@ -47,11 +48,12 @@
   .deli{
     top: 20px;
     position: relative;
+    color: var(--amber);
   }
-.banner__content-buttons .button1 {background: var(--gradient);}
+.banner__content-buttons .button1 {background: var(--gradient)}
 .banner__content-buttons .button2 {background: var(--gray);}
-.button1:hover{background:linear-gradient(110deg,#ce4f51 0%, #ff784f 100% )}
-.button2:hover{color: black;}
+.button1:hover{background:linear-gradient(110deg,#ce4f51 0%, #ff784f 100% ); color: black;transition: .4s;}
+.button2:hover{color: black;transition: .4s;;}
   @media (max-width: 850px) {
     .banner__container {
       flex-direction: column;
