@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,46 +10,171 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/global.css" />
-    <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/home.css" />
-
-    <link rel="stylesheet" href="ancorar/estilos/home.css" />
-    <link rel="stylesheet" href="ancorar/estilos/main1.css" />
-    <link rel="stylesheet" href="ancorar/estilos/temp.css" />
-    <link rel="stylesheet" href="ancorar/estilos/footer.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"rel="stylesheet"/>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+   <link rel="stylesheet" href="assets/css/sobre/home.css">
+    <link rel="stylesheet" href="assets/css/sobre/main.css">
+     <script>document.documentElement.className = 'js'</script>
     <title>Mais Sabor | Sobre</title>
   </head>
   <body>
+  
     <header>
-      <img src="ancorar/imaegns/logo.svg" alt="logo mais sabor" />
+      <img src="./assets/images/logo.svg" alt="logo mais sabor" />
 
-      <nav>
-        <ul>
+      <nav class="mobile-menu" id="itens">
+        <div class="js-accordion"><span></span><span></span><span></span></div>
+        <ul id="itens">
           <li>
-            <a href="/index2.html">Home</a>
+            <a href="index2.html" target="_blank">Home</a>
           </li>
           <li>
-            <a href="#" class="pagina-ativa">Sobre</a>
+            <a href="/sobre.html" class="pagina-ativa">Sobre</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Galeria</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Serviços</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="desktop-menu">
+        <ul id="itens">
+          <li>
+            <a href="#" target="_blank">Home</a>
+          </li>
+          <li>
+            <a href="sobre.html" class="pagina-ativa">Sobre</a>
           </li>
 
           <li>
-            <a href="#">Galeria</a>
+            <a href="#" target="_blank">Galeria</a>
           </li>
           <li>
-            <a href="#">Serviços</a>
+            <a href="#" target="_blank">Serviços</a>
           </li>
           <li>
-            <a href="#">Contato</a>
+            <a href="#" target="_blank">Contato</a>
           </li>
         </ul>
       </nav>
     </header>
+    <section class="banner">
+      <div class="banner__container">
+        <div class="banner__content">
+          <h1>Sobre nós!!</h1>
+          <p>
+            Damos as boas-vindas à MaisSabor! Com origem em Sapucaia do Sul, RS, somos o toque de excelência e delícia que faltava na sua cozinha. Nossos temperos são elaborados com carinho, criatividade e o conhecimento acumulado ao longo de anos adicionando sabor à vida. Aqui, você é a principal atração de nossa receita! Acompanhe-nos na viagem em busca do sabor sem igual. Seu paladar nos agradece!
+         <br><br>
+            A MaisSabor nasceu da paixão pela gastronomia e do compromisso em proporcionar sabores autênticos e enriquecedores a todos os nossos clientes. Nossa história começou em Sapucaia do Sul, mas logo se espalhou, tocando os corações e paladares de pessoas por todo o Brasil. Dedicamos tempo e cuidado na seleção dos ingredientes mais frescos e naturais, buscando sempre a perfeição em nossos produtos. Nós valorizamos a qualidade, a tradição e o bom gosto, oferecendo uma pitada de sabor à sua vida. Conosco, a jornada do sabor não é só uma experiência, é uma celebração de momentos deliciosos!
+          </p>
+
+          
+        </div>
+        <img class="img" src="assets/images/home-sobre/imgSobre01.png" alt="" />
+      </div>
+    </section>
+   
+
+    
+<span class="js-scroll">   
+    <main>
+      <section class="main1">
+        <div class="h2Principal"><h2>Por que nos escolher?</h2></div>
+        
+        <div class="art">
+        <article>
+          <h2><span>____</span>Delivery</h2>
+          <p>Oferecemos um serviço de entrega rápido e confiável, garantindo que os sabores autênticos da MaisSabor cheguem até você no conforto da sua casa.</p>
+        </article>
+
+        <article>
+          <h2><span>____</span>Melhores Preços</h2>
+          <p>Nosso compromisso é oferecer a melhor relação custo-benefício. Proporcionamos produtos de alta qualidade a preços justos e acessíveis.</p>
+        </article>
+
+        <article>
+          <h2><span>____</span>Garantia de Produto</h2>
+          <p>Com a MaisSabor, a qualidade está garantida. Todos os nossos temperos são cuidadosamente selecionados e preparados para superar suas expectativas.</p>
+        </article>
+      </div>
+      </section>
+    </main>
+  </span>
+  
+   
+  <footer>
+    <div class="footer__grid-container">
+      <div class="footer__div-logo">
+        <img src="./assets/images/logo.svg" alt="" />
+        <p>
+          Delivery rápido, temperos deliciosos, qualidade e sabor garantidos!
+        </p>
+      </div>
+      <div class="footer__div-empresa">
+        <h3>Empresa</h3>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__div-servicos">
+        <h3>Serviços</h3>
+        <ul>
+          <li><a href="#">Embalagem personalizada</a></li>
+          <li><a href="#">Consultoria de receitas</a></li>
+          <li><a href="#">Venda online</a></li>
+        </ul>
+      </div>
+      <div class="footer__div-contato">
+        <h3>Entre em contato</h3>
+        <ul>
+          <li>
+            <a href="#">Formulário</a>
+          </li>
+          <li>
+            <a href="tel:+99999999999">
+              <img
+                src="./assets/images/footer/whatsapp-logo.webp"
+                alt=""
+              />(99) 99999-9999
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer/instagram-logo.webp"
+                alt=""
+              />@maissabor
+            </a>
+          </li>
+          <li>
+            <a href="mailto:contato@maissabor.com">contato@maissabor.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright__container">
+      <p>Todos os direitos reservados....</p>
+  
+      <div>
+          <a href="#" class="geral">Termos e Condições</a>
+          <a href="#" class="geral">Políticas de Privacidade</a>
+      </div>
+  
+  </div>
+  </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

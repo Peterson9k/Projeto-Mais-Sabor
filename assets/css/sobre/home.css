@@ -1,0 +1,58 @@
+.banner__container {
+    margin-top: 40px;
+    padding: 0px 4% 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  .banner__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 550px;
+  }
+  .banner__content h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--coral);
+    cursor: default;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--coral);
+    
+  }  
+  .banner__content p {
+    color: var(--black);
+    font-size: 1.125rem;
+    line-height: 25.2px;
+    font-weight: 400;
+    cursor: default;
+  }
+  .banner__container img {
+    max-height: 550px;
+    max-width: 100%;
+  }
+
+.button2:hover{color: black;}
+  @media (max-width: 850px) {
+    .banner__container {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .banner__content {
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .banner__content h1 {
+      font-size: 2rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+  }
+  
+  

@@ -22,23 +22,23 @@
       <img src="./assets/images/logo.svg" alt="logo mais sabor" />
 
       <nav class="mobile-menu" id="itens">
-        <span class="js-accordion">≡</span>
+        <div class="js-accordion"><span></span><span></span><span></span></div>
         <ul class="itens">
           <li>
             <a href="#" class="pagina-ativa">Home</a>
           </li>
           <li>
-            <a href="/sobre.html">Sobre</a>
+            <a href="/sobre.html" target="_blank">Sobre</a>
           </li>
 
           <li>
-            <a href="#">Galeria</a>
+            <a href="#" target="_blank">Galeria</a>
           </li>
           <li>
-            <a href="#">Serviços</a>
+            <a href="#" target="_blank">Serviços</a>
           </li>
           <li>
-            <a href="#">Contato</a>
+            <a href="#" target="_blank">Contato</a>
           </li>
         </ul>
       </nav>
@@ -168,8 +168,7 @@
          </div>
        </section>
  
-
-<span class="js-scroll">   
+   
     <footer>
       <div class="footer__grid-container">
         <div class="footer__div-logo">
@@ -223,39 +222,17 @@
           </ul>
         </div>
       </div>
+      <div class="copyright__container">
+        <p>Todos os direitos reservados....</p>
+    
+        <div>
+            <a href="#" class="geral">Termos e Condições</a>
+            <a href="#" class="geral">Políticas de Privacidade</a>
+        </div>
+    
+    </div>
     </footer>
 </span>
-  <script>      
-       const menuBar = document.querySelectorAll('.mobile-menu span')
-      
-         
-       function ativarMenu (){
-          this.classList.toggle('ativo')
-          this.nextElementSibling.classList.toggle('ativo')
-       }
-
-       menuBar.forEach((item) =>{
-        item.addEventListener('click' , ativarMenu)
-       })
-
-       
-function animacaoAoScroll(){
-  const sections = document.querySelectorAll('.js-scroll')
-  if(sections.length){
-  const windowMetade = window.innerWidth * 0.6
-  function animalScroll(){
-    sections.forEach((sectionl) =>{
-        const sectionTop = sectionl.getBoundingClientRect().top;
-        const isSectionVisible = (sectionTop - windowMetade) < 0; 
-        if(isSectionVisible)sectionl.classList.add('ativo') 
-        else sectionl.classList.remove('ativo')
-        
-    })
-  }
-  animalScroll()
-  window.addEventListener('scroll' ,animalScroll)
-}}
-animacaoAoScroll()
-    </script>
+<script src="script.js"></script>
   </body>
 </html>
