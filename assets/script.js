@@ -46,6 +46,7 @@ function initScrollSuave() {
         behavior: 'smooth',
         block: 'start',
       });
+      return section
     }
   
     linksInternos.forEach((link) => {
