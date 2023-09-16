@@ -1,0 +1,47 @@
+main{
+    margin: 68px 0px 30px 00px;
+}
+
+main div {
+    max-width: 950px;
+    padding: 10px;
+    margin: auto;
+}
+main div h1, h2{
+    text-align: center;
+}
+main div h1{
+    padding-bottom: 19px;
+    color: var(--coral);
+    font-size: 1.8rem;
+    border-bottom: 4px solid var(--coral);
+}
+main div h2 {
+    color: var(--gray);
+    font-size: 1.5rem;
+    margin: auto;
+    padding-top: 10px;
+}
+
+main section{
+    display: flex;
+    width: 100%;
+    background: var(--gradient);
+    margin-top: 60px;
+}   
+
+main section img{
+    border-radius: 22px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+section .temp{
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    
+}

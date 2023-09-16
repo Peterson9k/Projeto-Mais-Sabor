@@ -12,7 +12,7 @@ menuBar.forEach((item) =>{
       function animacaoAoScroll(){
           const sections = document.querySelectorAll('.js-scroll')
           if(sections.length){
-          const windowMetade = window.innerWidth * 0.4
+          const windowMetade = window.innerWidth * 0.5
       function animalScroll(){
         sections.forEach((sectionl) =>{
             const sectionTop = sectionl.getBoundingClientRect().top;
@@ -34,3 +34,22 @@ const func = function(){
 item.addEventListener('click', func)
 
 
+
+function initScrollSuave() {
+    const linksInternos = document.querySelectorAll('a[href^="#"]');
+  
+    function scrollToSection(event) {
+      event.preventDefault();
+      const href = event.currentTarget.getAttribute('href');
+      const section = document.querySelector(href);
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  
+    linksInternos.forEach((link) => {
+      link.addEventListener('click', scrollToSection);
+    });
+  }
+  initScrollSuave();
